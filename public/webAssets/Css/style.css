@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+body  , *{
+    font-family: "Cairo", sans-serif;
+
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    color: #3f5364;
+}
+/* start navbar */
+.logo_img{
+    width: 200px;
+}
+/* start hero */
+.hero{
+    height: 75vh;
+    background: url(../images/hero.avif) center no-repeat;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: #3f5364b4;
+}
+.hero h1 {
+    position: relative;
+    z-index: 2222;
+    color: #fff;
+}
+.hero img {
+    position: relative;
+    z-index: 2222;
+    color: #fff;
+}
+.hero p {
+    position: relative;
+    z-index: 2222;
+    color: #fff;
+    font-size: 20px;
+}
+.account-icons i {
+    font-size: 20px;
+    color: hsl(208, 23%, 32%);
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background img {
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+section h3 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+.services_online a img {
+    width: 100px;
+}
+/* start footer */
+
+footer{
+    background-color: #3f5364;
+    padding: 60px 0;
+    color: #fff;
+}
+
+footer h3{
+    color: #fff;
+    font-size: 20px;
+}
+footer p{
+    color: #fff;
+}
+
+
+
+footer .links a {
+    color: white;
+
+}
+
+
+.btn-info{
+    background-color: #2fbac5 !important;
+    color: #fff !important;
+}
+/* start sub footer */
+
+.footer-raw p {
+    color: white;
+    padding: 15px 30px;
+    margin: 0 60px;
+}
+
+
+.footer-raw {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #2fbac5;
+}
+
+
+.footer-raw .social-media {
+    font-size: 20px;
+    color: white;
+    padding: 15px 30px;
+    margin: 0 60px;
+}
+
+.social-media i {
+    margin-left: 10px;
+    color: white;
+
+}
+/* start donation */
+
+.account-icons i {
+    font-size: 20px;
+    color: #3f5364;
+    margin: 10px;
+}
+
+.title {
+    height: 70px;
+    background-color: #3f5364;
+}
+
+.title p {
+    color: white;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cont_custom {
+    display: flex;
+    border-bottom: 2px solid #dfe4e9;
+}
+
+.cont_custom div {
+    width: 150px;
+    margin: 30px;
+    color: #3f5364;
+    text-align: center;
+}
+
+.cont_custom div:hover {
+    background-color: #2fbac5;
+    color: white;
+    cursor: pointer;
+}
+
+.cont_custom i {
+    display: block;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.cont_custom span {
+    margin: 5px;
+    display: block;
+}
+
+/* head back*/
+
+.about {
+    background-image: url(../images/head-back.png);
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.about h3 {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+/* end head back */
+
+section p {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+    color: #3f5364;
+}
+
+.projectOne {
+    display: flex;
+    gap: 20px;
+    margin: 24px 0;
+}
+
+.project-inputs label {
+    margin: 15px 0;
+}
+
+.projectimg {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.projectOne_new{
+    display: block;
+}
+.projectOne_new img{
+    width: 100%;
+    margin-bottom:10px ;
+    height: 300px;
+    object-fit: cover;
+}
+.projectOne_new  h4{
+    font-size: 16px;
+    font-weight: 800;
+
+}
+.rounded{
+    border-radius: 10px !important;
+}
