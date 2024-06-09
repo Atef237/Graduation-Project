@@ -25,7 +25,7 @@ class Store extends FormRequest
     {
         return [
             'name'      => 'required|unique:donation_scopes,name|min:3|max:255',
-            'icon'      => 'required|min:3|max:255|file|mimes:png,jpg,jpeg',
+//            'icon'      => 'required|min:3|max:255|file|mimes:png,jpg,jpeg',
             'status'    => 'required|in:active,inactive',
         ];
     }

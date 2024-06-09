@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Web;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\web\DonorRegister;
 use App\Http\Requests\web\ProjectUserStore;
 use App\Models\DonationScope;
@@ -11,6 +10,7 @@ use App\Models\DonorProject;
 use App\Models\Project;
 use App\Models\ProjectUser;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class DonorController extends Controller
 {
@@ -41,7 +41,7 @@ class DonorController extends Controller
     public function donorLogin(Request $request)
     {
         $request->validate([
-            'email' => 'required|email',
+            ' phone' => 'required|email',
             'password' => 'required',
         ]);
 

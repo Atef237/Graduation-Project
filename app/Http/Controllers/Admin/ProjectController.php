@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Projet\Store;
 use App\Models\DonationScope;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class ProjectController extends Controller
 {
@@ -102,7 +102,7 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        DonationScope::findOrFail($id)->delete();
-        return redirect()->route('donation_scopes.index');
+        Project::find($id)->delete();
+        return redirect()->route('dashboard.v1.project.index');
     }
 }

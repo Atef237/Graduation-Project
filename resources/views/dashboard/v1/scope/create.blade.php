@@ -50,18 +50,18 @@
                         @endif
                     </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">{{__('all.image')}}</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="icon" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">{{__('all.choose_file')}}</label>
-                            </div>
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="">{{__('all.upload')}}</span>
-                            </div>
-                        </div>
-                    </div>
+{{--                    <div class="form-group col-md-6">--}}
+{{--                        <label for="exampleInputEmail1">{{__('all.image')}}</label>--}}
+{{--                        <div class="input-group">--}}
+{{--                            <div class="custom-file">--}}
+{{--                                <input type="file" class="custom-file-input" name="icon" id="exampleInputFile">--}}
+{{--                                <label class="custom-file-label" for="exampleInputFile">{{__('all.choose_file')}}</label>--}}
+{{--                            </div>--}}
+{{--                            <div class="input-group-append">--}}
+{{--                                <span class="input-group-text" id="">{{__('all.upload')}}</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
 
 
@@ -78,5 +78,5 @@
 
 @stop
 @section('scripts')
-    @include('dashboard.v1.car.scripts')
+{{--    @include('dashboard.v1.car.scripts')--}}
 @endsection

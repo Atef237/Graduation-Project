@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\Web;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\Web\BeneficiaryRegister;
-use App\Models\Hamada;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class BeneficiaryController extends Controller
 {
@@ -27,7 +26,6 @@ class BeneficiaryController extends Controller
 
     public function postLogin(Request $request)
     {
-//        dd(auth()->attempt(['phone' => $request->phone, 'password' => $request->password]));
         if(auth()->attempt(['phone' => $request->phone, 'password' => $request->password])){
             return redirect()->route('home');
         }

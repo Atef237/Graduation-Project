@@ -157,9 +157,33 @@ return [
     'price' => 'Price',
     'currency' => 'Currency',
     'success_process_msg' => 'Process Done Successfully',
+    'donation_scopes'  => 'donation scopes',
+    'donation_scopes_index'  => 'donation scopes index',
+    'donation_scopes_create'  => 'create donation scopes',
+    'donation_scope'        => 'donation scope',
+     'donation_projects' => 'Donation Projects',
+     'donation_projects_index' => 'View Donation Projects',
+     'donation_projects_create' => 'Create Donation Project',
+     'donation_projects_edit' => 'Edit Donation Project',
+     'donation_projects_show' => 'View Donation Project',
 
+     'financial_balance' => 'Financial Balance',
+     'project_index' => 'View Projects',
+     'project_create' => 'Create Project',
+     'project_edit' => 'Edit Project',
+     'project_show' => 'View Project',
 
+     'accept' => 'Accept',
+     'reject' => 'Reject',
+     'donor_project' => 'Donations',
+     'donor_project_index' => 'View Donations',
+     'donor_request_index' => 'View Support Requests',
+     'donor_request' => 'Support Requests',
 
-
+    'balance' => 'Target amount',
+    'admin' => 'admin',
+    'project_name' => 'project name',
+    'donor_name' => 'donor name',
+    'net_income' => 'net income',
 
 ];

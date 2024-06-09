@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\DonorProject;
 use App\Models\ProjectUser;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class SupportRequestContoller extends Controller
 {
@@ -71,11 +71,13 @@ class SupportRequestContoller extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
-        //
+        $donor_project = DonorProject::find($id);
+        $donor_project->delete();
+        return redirect()->route('donor_request.index');
     }
 
 

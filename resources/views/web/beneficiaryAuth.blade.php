@@ -38,8 +38,7 @@
                                     تسجيل حساب جديد</a
                                 >
 
-                                <a
-                                    href="{{route('showLoginForm')}}"
+                                <a href="{{route('showLoginForm')}}"
                                     class="btn shadow-sm btn-light m-2"
                                     style="height: 40px"
                                 >تسجيل دخول</a

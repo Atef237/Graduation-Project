@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Repositories\AdminsRepository;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 
 class AdminsController extends Controller

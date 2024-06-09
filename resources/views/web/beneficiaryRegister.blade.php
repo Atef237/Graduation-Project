@@ -1,8 +1,5 @@
 @extends('web.layout.master')
 
-@section('title')
-
-@endsection
 
 @section('content')
 

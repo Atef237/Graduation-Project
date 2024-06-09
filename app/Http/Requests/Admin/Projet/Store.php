@@ -25,7 +25,7 @@ class Store extends FormRequest
     {
         return [
             'name'                  => 'required|max:255',
-            'image'                 => 'required|file|mimes:jpeg,png,jpg,gif,svg',
+//            'image'                 => 'required|file|mimes:jpeg,png,jpg,gif,svg',
             'financial_balance'     => 'required|numeric',
             'donation_scope_id'     => 'required|exists:donation_scopes,id',
         ];

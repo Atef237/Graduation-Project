@@ -27,9 +27,9 @@
                         <thead>
                         <tr style="font-size: large ; font-family: cairo">
                             <th>#</th>
-                            <th>اسم المتبرع</th>
-                            <th>اسم المشروع </th>
-                            <th>مبلغ التبرع </th>
+                            <th>{{__('all.donor_name')}}</th>
+                            <th>{{__('all.project_name')}} </th>
+                            <th>{{__('all.amount')}}</th>
                         </tr>
                         </thead>
                         <tbody>

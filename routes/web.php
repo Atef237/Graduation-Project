@@ -34,6 +34,7 @@ Route::post('postRegister',[BeneficiaryController::class,'postRegister'])->name(
 Route::post('postLogin',[BeneficiaryController::class,'postLogin'])->name('postLogin');
 
 Route::get('profile',[BeneficiaryController::class,'profile'])->name('profile')->middleware('auth');
+
 Route::get('askingForDonation',[DonorController::class,'askingForDonation'])->name('askingForDonation')->middleware('auth');
 Route::post('askingForDonation',[DonorController::class,'storeAskingForDonation'])->name('storeAskingForDonation')->middleware('auth');
 

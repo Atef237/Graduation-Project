@@ -1,6 +1,4 @@
 @extends('web.layout.master')
-
-
 @section('title')
     الحساب الشخصي
 @endsection
@@ -29,10 +27,6 @@
                     <input type="text" id="national-id" name="national-id" value="{{auth()->user()->nationality_id}}" class="form-control mb-3" disabled>
                 </div>
 
-
-{{--                <div class="status-message">--}}
-{{--                    <p class="accepted"> طلب التسجيل كمستفيد <span> تم قبوله</span> </p>--}}
-{{--                </div>--}}
             </div>
         </div>
     </div>

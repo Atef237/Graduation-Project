@@ -40,8 +40,8 @@
                         <thead>
                         <tr style="font-size: large ; font-family: cairo">
                             <th>#</th>
-                            <th>الاسم</th>
-                            <th>الحالة</th>
+                            <th>{{__('all.name')}}</th>
+                            <th>{{__('all.status')}}</th>
                         </tr>
                         </thead>
                         <tbody>

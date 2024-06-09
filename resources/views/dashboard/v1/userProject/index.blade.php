@@ -29,9 +29,9 @@
                         <thead>
                         <tr style="font-size: large ; font-family: cairo">
                             <th>#</th>
-                            <th> اسم المشروع</th>
-                            <th>اسم مقد طلب الدعم</th>
-                            <th>صافي الدخل</th>
+                            <th> {{__('all.project_name')}}</th>
+                            <th>{{__('all.donor_name')}}</th>
+                            <th>{{__('all.net_income')}}</th>
                         </tr>
                         </thead>
                         <tbody>

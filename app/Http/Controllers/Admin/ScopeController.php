@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\DonationScope\Store;
 use App\Http\Requests\Admin\DonationScope\update;
 use App\Models\DonationScope;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class ScopeController extends Controller
 {

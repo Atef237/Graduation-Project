@@ -78,5 +78,5 @@
 
 @stop
 @section('scripts')
-    @include('dashboard.v1.car.scripts')
+{{--    @include('dashboard.v1.car.scripts')--}}
 @endsection

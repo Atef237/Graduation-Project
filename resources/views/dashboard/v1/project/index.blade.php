@@ -28,10 +28,10 @@
                         <thead>
                         <tr style="font-size: large ; font-family: cairo">
                             <th>#</th>
-                            <th>الاسم</th>
-                            <th>الرصيد المستهدف</th>
-                            <th>الادمن </th>
-                            <th>الباب </th>
+                            <th>{{__('all.name')}}</th>
+                            <th>{{__('all.balance')}}</th>
+                            <th>{{__('all.admin')}} </th>
+                            <th>{{__('all.donation_scope')}} </th>
                         </tr>
                         </thead>
                         <tbody>
@@ -46,17 +46,17 @@
                                 <td>{{$row->financial_balance}}</td>
                                 <td>{{$row->admin->name}}</td>
                                 <td>{{$row->donation_scope->name}}</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger waves-effect waves-light"
-                                            data-toggle="modal" data-target="#myModal{{$row->id}}">{{__('all.delete')}}
-                                    </button>
+{{--                                <td>--}}
+{{--                                    <button type="button" class="btn btn-danger waves-effect waves-light"--}}
+{{--                                            data-toggle="modal" data-target="#myModal{{$row->id}}">{{__('all.delete')}}--}}
+{{--                                    </button>--}}
 
-                                    <a href="{{route('donation_scopes.edit',$row->id)}}">
-                                        <button type="button"
-                                                class="btn btn-info waves-effect waves-light">{{__('all.edit')}}
-                                        </button>
-                                    </a>
-                                </td>
+{{--                                    <a href="{{route('donation_scopes.edit',$row->id)}}">--}}
+{{--                                        <button type="button"--}}
+{{--                                                class="btn btn-info waves-effect waves-light">{{__('all.edit')}}--}}
+{{--                                        </button>--}}
+{{--                                    </a>--}}
+{{--                                </td>--}}
                             </tr>
                                 <?php
                                 $i++;
@@ -76,22 +76,22 @@
                                             <h5 class="font-16">{{__('all.are_you_sure_to_delete')}}</h5>
 
                                         </div>
-                                        <div class="modal-footer">
+{{--                                        <div class="modal-footer">--}}
 
-                                            <form method="post" enctype="multipart/form-data"
-                                                  action="{{route('donation_scopes.destroy',$row->id)}}">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="button" class="btn btn-light waves-effect"
-                                                        data-dismiss="modal">{{__('all.cancel')}}
-                                                </button>
-                                                <button type="submit"
-                                                        class="btn btn-danger waves-effect waves-light">{{__('all.delete')}}
-                                                </button>
-                                            </form>
+{{--                                            <form method="post" enctype="multipart/form-data"--}}
+{{--                                                  action="{{route('donation_projects.destroy',$row->id)}}">--}}
+{{--                                                @csrf--}}
+{{--                                                @method('DELETE')--}}
+{{--                                                <button type="button" class="btn btn-light waves-effect"--}}
+{{--                                                        data-dismiss="modal">{{__('all.cancel')}}--}}
+{{--                                                </button>--}}
+{{--                                                <button type="submit"--}}
+{{--                                                        class="btn btn-danger waves-effect waves-light">{{__('all.delete')}}--}}
+{{--                                                </button>--}}
+{{--                                            </form>--}}
 
 
-                                        </div>
+{{--                                        </div>--}}
                                     </div><!-- /.modal-content -->
                                 </div><!-- /.modal-dialog -->
                             </div><!-- /.modal -->
