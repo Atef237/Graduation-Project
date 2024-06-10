@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('donation_scopes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('admin_id')->references('id')->on('admins')->cascadeOnDelete();
             $table->string('name');
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();

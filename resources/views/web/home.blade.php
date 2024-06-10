@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center text-center">
-                    <a href="{{auth()->check() ? route('allProjects') : route('donorAuth')}}">
+                    <a href="{{route('allProjects')}}">
                         <img src="{{asset('webAssets/images/doner.6f73474.svg')}}" alt="Handbag Icon" />
 
                         <p style="margin-top: 20px; font-size: 20px; font-weight: bold ;color: #2fbac5;">المتبرع</p>

@@ -1,5 +1,8 @@
 @extends('web.layout.master')
 
+@section('title')
+    تسجيل حساب جديد
+@endsection
 
 @section('content')
 
@@ -12,7 +15,6 @@
 
     <div class="my-4">
         <h2>تسجيل حساب جديد</h2>
-
         <p>هل لديك حساب بالفعل؟ <a href="{{route('showLoginForm')}}"    style="color: #2fbac5; text-decoration: none">دخول</a></p>
         <div class="container-fluid">
             <div class="row">

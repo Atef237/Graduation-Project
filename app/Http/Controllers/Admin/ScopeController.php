@@ -39,15 +39,7 @@ class ScopeController extends Controller
      */
     public function store(Store $request)
     {
-        $donationScope = DonationScope::create($request->validated());
-        if ($request->hasFile('icon')) {
-            $donationScope->clearMediaCollection('icon');
-//            $donationScope->addMedia($request->icon)->toMediaCollection('icon');
-            $donationScope->addMedia($request->file('icon'))->toMediaCollection('icon');
-
-        }
-
-        success_toast();
+        $donationScope = DonationScope::create($request->validated() + ['admin_id' => auth('admin')->user()->id] );
         return redirect()->route('donation_scopes.index');
     }
 

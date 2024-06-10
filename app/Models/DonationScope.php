@@ -8,16 +8,14 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\HasMedia;
 
 
-class DonationScope extends Model implements HasMedia
+class DonationScope extends Model
 {
     use HasFactory;
-    use  InteractsWithMedia ;
-
-
     protected  $table = 'donation_scopes';
 
     protected $fillable = [
         'name',
+        'admin_id',
         'status'
     ];
 }

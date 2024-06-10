@@ -13,7 +13,7 @@
                         <a class="nav-link active" aria-current="page" href="{{auth()->check() ? route('logout') : '' }}">{{auth()->check() ? 'تسجيل الخروج' : ''}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{auth()->check() ? route('profile') : route('showLoginForm')}}">{{auth()->check() ? auth()->user()->name : 'تسجيل دخول'}}</a>
+                        <a class="nav-link active" aria-current="page" href="{{auth()->check() ? route('profile') : route('showLoginForm')}}">{{auth()->check() ? auth()->user()->name : ''}}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('home')}}">الصفحة الرئيسية</a>

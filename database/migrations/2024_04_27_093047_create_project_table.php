@@ -14,9 +14,8 @@ return new class extends Migration
         Schema::create('project', function (Blueprint $table) {
             $table->id();
             $table->foreignId('donation_scope_id')->references('id')->on('donation_scopes')->cascadeOnDelete();
-            $table->foreignId('admin_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreignId('admin_id')->references('id')->on('admins')->cascadeOnDelete();
             $table->string('name');
-            $table->string('image');
             $table->double('financial_balance')->default(0);
             $table->timestamps();
         });

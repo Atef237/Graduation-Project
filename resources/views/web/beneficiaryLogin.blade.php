@@ -61,15 +61,6 @@
                                 </div>
 
 
-                                <div class="text">
-                                    نسيت كلمة المرور ؟
-                                    <a
-                                        href="forgetpass.html"
-                                        style="color: #2fbac5; text-decoration: none"
-                                    >إعادة تعين كلمة المرور</a
-                                    >
-                                </div>
-
                                 <div class="button input-box">
                                     <input
                                         type="submit"

@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DonorProject extends Model
+class Donations extends Model
 {
     use HasFactory;
 
-    protected $table = 'donor_project';
+    protected $table = 'donations';
 
     protected $fillable = ['donor_id','project_id','amount','status'];
 

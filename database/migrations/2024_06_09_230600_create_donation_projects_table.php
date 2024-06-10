@@ -8,24 +8,25 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
-        Schema::create('donor_project', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('donor_id')->references('id')->on('donor')->cascadeOnDelete();
+        Schema::create('donation_projects', function (Blueprint $table) {
+            $table->foreignId('donation_id')->references('id')->on('donations')->cascadeOnDelete();
             $table->foreignId('project_id')->references('id')->on('project')->cascadeOnDelete();
-            $table->double('amount');
-            $table->enum('donation_method',['cache'])->default('cache');
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('donor_project');
+        Schema::dropIfExists('donation_projects');
     }
 };

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\DonorProject;
+use App\Models\Donations;
 use App\Models\ProjectUser;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -75,8 +75,8 @@ class SupportRequestContoller extends Controller
      */
     public function destroy($id)
     {
-        $donor_project = DonorProject::find($id);
-        $donor_project->delete();
+        $Donations = Donations::find($id);
+        $Donations->delete();
         return redirect()->route('donor_request.index');
     }
 

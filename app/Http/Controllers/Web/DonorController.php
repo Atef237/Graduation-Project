@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Requests\web\DonorRegister;
 use App\Http\Requests\web\ProjectUserStore;
+use App\Models\Donations;
 use App\Models\DonationScope;
 use App\Models\Donor;
-use App\Models\DonorProject;
 use App\Models\Project;
 use App\Models\ProjectUser;
 use Illuminate\Http\Request;
@@ -79,7 +79,7 @@ class DonorController extends Controller
 
     public function donorRequest(Request $request)
     {
-        DonorProject::create(['project_id' => $request->project_id,'donor_id' => auth()->user()->id,'amount' => $request->amount]);
+        Donations::create(['project_id' => $request->project_id,'donor_id' => auth()->user()->id,'amount' => $request->amount]);
         $project = Project::find($request->project_id);
         $project->update(['financial_balance' => $project->financial_balance - $request->amount]);
 

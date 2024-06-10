@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/',)
 
 Route::view('/','web.home')->name('home');
-
 Route::get('/Beneficiary',[BeneficiaryController::class,'index'])->name('beneficiaryAuth');
+
 Route::get('/donor',[DonorController::class,'index'])->name('allProjects');
 Route::get('auth/donor',[DonorController::class,'authDonor'])->name('donorAuth');
 Route::get('donor/login',[DonorController::class,'showDonorLoginForm'])->name('showDonorLoginForm');
@@ -28,9 +28,11 @@ Route::post('donor/login',[DonorController::class,'donorLogin'])->name('donorLog
 Route::get('donor/register',[DonorController::class,'showDonorRegisterForm'])->name('showDonorRegisterForm');
 Route::post('donor/register',[DonorController::class,'donorRegister'])->name('donorRegister');
 Route::post('donorRequest',[DonorController::class,'donorRequest'])->name('donorRequest');
-Route::get('/showRegister',[BeneficiaryController::class,'showRegisterForm'])->name('showRegisterForm');
+
+Route::get('/showRegister',[BeneficiaryController::class,'showRegisterForm'])->name('showRegisterForm'); // norhan
+Route::post('postRegister',[BeneficiaryController::class,'postRegister'])->name('postRegister');        // norhan
+
 Route::get('/showLogin',[BeneficiaryController::class,'showLoginForm'])->name('showLoginForm');
-Route::post('postRegister',[BeneficiaryController::class,'postRegister'])->name('postRegister');
 Route::post('postLogin',[BeneficiaryController::class,'postLogin'])->name('postLogin');
 
 Route::get('profile',[BeneficiaryController::class,'profile'])->name('profile')->middleware('auth');
